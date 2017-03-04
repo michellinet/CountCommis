@@ -17,10 +17,19 @@ class IngredientListTableViewController: UITableViewController {
     //    let thirdIngredient = Ingredient(name: "Quinoa", servingSize: 100, calories: 98)
 
 
-    let dataArray = ["Ground Turkey, 120", "Bell Peppers, 10", "Quinoa, 98"]
+    
+    let groundTurkey = Food(name: "Ground Turkey", calories: 120)
+    
+    let groundTurkeyAmount = Ingredient(food: Food(name: "Ground Turkey", calories: 120), amount: 10)
+    
+    
+    var dataArray = [Ingredient]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataArray.append(groundTurkeyAmount)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +53,8 @@ class IngredientListTableViewController: UITableViewController {
         
         //handling sections properly -- i.e. indexPath section 1, row 1 will be "Ground Turkey, 120"
         if indexPath.section == 0 {
-            cell.textLabel?.text = dataArray[indexPath.row]
+           var ingredient = dataArray[indexPath.row]
+            cell.textLabel?.text = groundTurkey.name + " - " + "Total Calories: \(groundTurkey.calories)"
         } else {
             cell.textLabel?.text = "More Ingredients"
         }
