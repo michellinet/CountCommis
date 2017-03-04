@@ -9,14 +9,12 @@
 import Foundation
 
 class Ingredient: NSObject {
-    let name: String
-    let servingSize: Int
-    let calories: Int
+    let food: Food
+    let amount: Float
     
-    init(name: String, servingSize: Int, calories: Int) {
-        self.name = name
-        self.servingSize = servingSize
-        self.calories = calories
+    init(food: Food, amount: Float) {
+        self.food = food
+        self.amount = amount
         super.init()
     }
 }
