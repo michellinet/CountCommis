@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F446E65F1E6BE23D006A2BB8 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446E65E1E6BE23D006A2BB8 /* Food.swift */; };
+		F446E6611E6BE2B6006A2BB8 /* IngredientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446E6601E6BE2B6006A2BB8 /* IngredientDetailViewController.swift */; };
 		F4E2CB041E5F6DBD00F42AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2CB031E5F6DBD00F42AF5 /* AppDelegate.swift */; };
 		F4E2CB061E5F6DBD00F42AF5 /* IngredientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2CB051E5F6DBD00F42AF5 /* IngredientListViewController.swift */; };
 		F4E2CB091E5F6DBD00F42AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E2CB071E5F6DBD00F42AF5 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F446E65E1E6BE23D006A2BB8 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F446E6601E6BE2B6006A2BB8 /* IngredientDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientDetailViewController.swift; sourceTree = "<group>"; };
 		F4E2CB001E5F6DBD00F42AF5 /* CountCommis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountCommis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E2CB031E5F6DBD00F42AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E2CB051E5F6DBD00F42AF5 /* IngredientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				F4E2CB031E5F6DBD00F42AF5 /* AppDelegate.swift */,
 				F4E2CB051E5F6DBD00F42AF5 /* IngredientListViewController.swift */,
+				F446E6601E6BE2B6006A2BB8 /* IngredientDetailViewController.swift */,
 				F4E2CB071E5F6DBD00F42AF5 /* Main.storyboard */,
 				F4E2CB0A1E5F6DBD00F42AF5 /* Assets.xcassets */,
 				F4E2CB0C1E5F6DBD00F42AF5 /* LaunchScreen.storyboard */,
 				F4E2CB0F1E5F6DBD00F42AF5 /* Info.plist */,
 				F4E2CB151E5F6F3700F42AF5 /* Ingredient.swift */,
+				F446E65E1E6BE23D006A2BB8 /* Food.swift */,
 			);
 			path = CountCommis;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E2CB061E5F6DBD00F42AF5 /* IngredientListViewController.swift in Sources */,
+				F446E65F1E6BE23D006A2BB8 /* Food.swift in Sources */,
 				F4E2CB041E5F6DBD00F42AF5 /* AppDelegate.swift in Sources */,
 				F4E2CB161E5F6F3700F42AF5 /* Ingredient.swift in Sources */,
+				F446E6611E6BE2B6006A2BB8 /* IngredientDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +309,7 @@
 				F4E2CB141E5F6DBD00F42AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,6 +46,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="goj-Xg-mvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="230" y="13"/>
+        </scene>
+        <!--Ingredient Detail View Controller-->
+        <scene sceneID="FU3-vz-lQw">
+            <objects>
+                <viewController id="aOd-Ad-Sc1" customClass="IngredientDetailViewController" customModule="CountCommis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jDr-wR-gV8"/>
+                        <viewControllerLayoutGuide type="bottom" id="AlW-5X-pVu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rYJ-aG-XrO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kLJ-qk-0ZP">
+                                <rect key="frame" x="16" y="28" width="343" height="96.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-gI-8n3">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter ingredient name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FtM-Qh-dz0">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdN-I8-T0h">
+                                        <rect key="frame" x="0.0" y="66.5" width="343" height="30"/>
+                                        <state key="normal" title="Set Default Label Name"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MdN-I8-T0h" secondAttribute="trailing" id="fu4-Mt-3E1"/>
+                                    <constraint firstAttribute="trailing" secondItem="A4a-gI-8n3" secondAttribute="trailing" id="gR0-i0-Zif"/>
+                                    <constraint firstAttribute="trailing" secondItem="FtM-Qh-dz0" secondAttribute="trailing" id="xmB-6z-XNF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kLJ-qk-0ZP" firstAttribute="leading" secondItem="rYJ-aG-XrO" secondAttribute="leadingMargin" id="8dz-99-b40"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kLJ-qk-0ZP" secondAttribute="trailing" id="auM-ix-UdS"/>
+                            <constraint firstItem="kLJ-qk-0ZP" firstAttribute="top" secondItem="jDr-wR-gV8" secondAttribute="bottom" constant="8" id="rzu-7b-EEu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2J-Q4-O0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="21"/>
         </scene>
     </scenes>
 </document>

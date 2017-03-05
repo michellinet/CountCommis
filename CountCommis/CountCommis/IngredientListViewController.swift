@@ -9,27 +9,15 @@
 import UIKit
 
 class IngredientListTableViewController: UITableViewController {
-    //inheriting from UITableViewController lets us inherit automaticaly delegation & data source or protocols
-   
-    //Saving these values for later, for now use hardcoded values
-    //    let firstIngredient = Ingredient(name: "Ground Turkey", servingSize: 100, calories: 120)
-    //    let secondIngredient = Ingredient(name: "Bell Peppers", servingSize: 50, calories: 10)
-    //    let thirdIngredient = Ingredient(name: "Quinoa", servingSize: 100, calories: 98)
 
-
-    
-    let groundTurkey = Food(name: "Ground Turkey", calories: 120)
-    
-    let groundTurkeyAmount = Ingredient(food: Food(name: "Ground Turkey", calories: 120), amount: 10)
-    
-    
+    let groundTurkey = Ingredient(food: Food(name: "Ground Turkey", calories: 120), amount: 10)
+        
     var dataArray = [Ingredient]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataArray.append(groundTurkeyAmount)
-        
+        dataArray.append(groundTurkey)
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,7 +42,7 @@ class IngredientListTableViewController: UITableViewController {
         //handling sections properly -- i.e. indexPath section 1, row 1 will be "Ground Turkey, 120"
         if indexPath.section == 0 {
            var ingredient = dataArray[indexPath.row]
-            cell.textLabel?.text = groundTurkey.name + " - " + "Total Calories: \(groundTurkey.calories)"
+            cell.textLabel?.text = groundTurkey.food.name + " - " + "Total Calories: \(groundTurkey.food.calories)"
         } else {
             cell.textLabel?.text = "More Ingredients"
         }
