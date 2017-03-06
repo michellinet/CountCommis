@@ -10,9 +10,9 @@ import Foundation
 
 class Food {
     let name: String
-    let calories: Float
+    let calories: Int
     
-    init(name: String, calories: Float) {
+    init(name: String, calories: Int) {
         self.name = name
         self.calories = calories
     }

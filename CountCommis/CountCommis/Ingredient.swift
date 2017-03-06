@@ -6,11 +6,16 @@
 //  Copyright © 2017 Michelline Tran. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Ingredient: NSObject {
+    
+    //MARK: Properties
+    
     let food: Food
     let amount: Float
+    
+    //MARK: Initialization
     
     init(food: Food, amount: Float) {
         self.food = food
